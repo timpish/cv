@@ -295,7 +295,7 @@
     hr.subsection::after {
         content: '\00A7';
         display: block;
-        filter: opacity(.1);
+        filter: opacity(0.2);
         text-align: center;
     }
 
