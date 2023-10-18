@@ -448,3 +448,22 @@
     .* {
         outline: deeppink dotted 0.5px;
     }
+
+
+    /* login alert + animation */
+
+    .alert {
+        animation: slide-up 250ms ease;
+    }
+
+    @keyframes slide-up {
+        0% {
+            opacity: 0;
+            transform: translateX(0.4rem);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
