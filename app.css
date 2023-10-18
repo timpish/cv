@@ -291,12 +291,16 @@
         border: none;
     }
 
-    hr.section::after {
+    hr.section::after,
+    hr.subsection::after {
         content: '\00A7';
         display: block;
         filter: opacity(.1);
-        font-size: var(--_cv-fontSize-xxl);
         text-align: center;
+    }
+
+    hr.section::after {
+        font-size: var(--_cv-fontSize-xxl);
     }
 
     hr.subsection::after {
@@ -333,10 +337,6 @@
 
     .vertical-rhythm-xs>*+* {
         margin-block-start: var(--_cv-space-xs);
-    }
-
-    .vertical-rhythm-s>*+* {
-        margin-block-start: var(--_cv-space-l-xl);
     }
 
     .vertical-rhythm-s>*+* {
@@ -445,6 +445,6 @@
     }
 
     /* layout debugger */
-    .* {
+    * {
         outline: deeppink dotted 0.5px;
     }
