@@ -527,7 +527,7 @@ utils
 }
 
 /* layout debugger */
-* {
+.* {
     outline: deeppink dotted 0.5px;
 }
 
