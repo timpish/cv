@@ -527,7 +527,7 @@ utils
 }
 
 /* layout debugger */
-.* {
+* {
     outline: deeppink dotted 0.5px;
 }
 
@@ -614,9 +614,8 @@ print styles @media to avoid extra http call
         }
 
         body {
-            /*6-16*/
             margin: 8mm 2mm 0 5mm !important;
-            padding-bottom: 7.9mm !important;
+            padding: 0 !important;
         }
 
         body,
@@ -624,8 +623,9 @@ print styles @media to avoid extra http call
         h4,
         h5,
         p {
-            font-size: 9pt;
+            font-size: 9.3pt;
         }
+
 
         h1 {
             font-size: 25pt;
@@ -648,7 +648,8 @@ print styles @media to avoid extra http call
 
         main::after {
             font-size: 7.2pt;
-            padding-top: 23pt;
+            line-height: 0.9;
+            padding-top: 46pt;
         }
     }
 
