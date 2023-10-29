@@ -4,7 +4,6 @@ reset
 based on https://andy-bell.co.uk/a-more-modern-css-reset/
 
 */
-
 *,
 *::before,
 *::after {
@@ -60,12 +59,13 @@ a:not([class]) {
     scroll-margin-block: 5ex;
 }
 
+
+
 /*
 
 global vars
 
 */
-
 :where(html) {
 
     /* pseudo-private props in triptych notation: namespaceName-valueType-variableName
@@ -110,6 +110,8 @@ global vars
     background-color: var(--_cv-color-light);
 }
 
+
+
 /*
 
 dark mode ;)
@@ -121,6 +123,8 @@ dark mode ;)
         color: var(--_cv-color-light);
     }
 }
+
+
 
 /*
 
@@ -318,6 +322,7 @@ symbol {
 }
 
 
+
 /*
 
 sections
@@ -342,6 +347,8 @@ hr.section::after {
 hr.subsection::after {
     font-size: var(--_cv-fontSize-xl);
 }
+
+
 
 /*
 
@@ -441,6 +448,8 @@ article.box,
     margin-inline-end: var(--_cv-space-xs-s);
 }
 
+
+
 /*
 
 login alert animation
@@ -458,6 +467,8 @@ login alert animation
         transform: translateX(0);
     }
 }
+
+
 
 /*
 
@@ -519,6 +530,8 @@ utils
 .* {
     outline: deeppink dotted 0.5px;
 }
+
+
 
 /*
 
