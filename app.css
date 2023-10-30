@@ -542,7 +542,7 @@ print styles @media to avoid extra http call
 
     /* add a note for tree killers after the content */
     main::after {
-        content: "View on-screen at resume.timpish.com ⊹ LinkedIn: https://www.linkedin.com/in/timpish";
+        content: "View on-screen at resume.timpish.com ⊹ LinkedIn: https://www.linkedin.com/in/timothyfmartens/";
         display: block;
         font-size: 8pt;
         padding-top: 28pt;
