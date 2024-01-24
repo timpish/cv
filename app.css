@@ -207,7 +207,8 @@ address {
 
 abbr {
     font-family: var(--_cv-fontFamily-smallcaps);
-    font-variant-caps: all-small-caps;
+    /* font-variant-caps: all-small-caps; */
+    text-transform: lowercase;
     letter-spacing: var(--_cv-letterSpacing-trackingSubtle);
     text-decoration-line: underline;
     text-decoration-style: dotted;
@@ -220,7 +221,8 @@ abbr {
 h3 abbr,
 h4 abbr {
     font-family: var(--_cv-fontFamily-display);
-    font-variant-caps: normal;
+    /* font-variant-caps: normal; */
+    text-transform: uppercase;
 }
 
 /* plural smallcaps abbrs */
@@ -231,6 +233,7 @@ abbr+span {
 /* cap smallcaps in skill boxes */
 .box li abbr {
     font-variant-caps: normal;
+    text-transform: none;
 }
 
 /* neutral color &ndash; date range */
@@ -307,7 +310,6 @@ button:focus {
     outline-offset: +6.853px;
 }
 
-/* base64 svg icons */
 svg {
     color: var(--_cv-color-neutral);
     width: 10px;
@@ -505,6 +507,11 @@ utils
 }
 
 /* type */
+
+.text-transform\:lowercase {
+    text-transform: lowercase;
+}
+
 .font-variant-numeric\:ln {
     font-variant-numeric: lining-nums;
 }
@@ -542,7 +549,7 @@ print styles @media to avoid extra http call
 
     /* add a note for tree killers after the content */
     main::after {
-        content: "View on-screen at resume.timpish.com ⊹ LinkedIn: https://www.linkedin.com/in/timothyfmartens/";
+        content: "View my resume on-screen at resume.timpish.com ⊹ linkedin.com/in/timothyfmartens/";
         display: block;
         font-size: 8pt;
         padding-top: 28pt;
